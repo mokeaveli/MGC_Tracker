@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9CF48B622C78D0AF00868B30 /* MGC_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B612C78D0AF00868B30 /* MGC_TrackerApp.swift */; };
-		9CF48B642C78D0AF00868B30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B632C78D0AF00868B30 /* ContentView.swift */; };
 		9CF48B662C78D0B000868B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF48B652C78D0B000868B30 /* Assets.xcassets */; };
-		9CF48B692C78D0B000868B30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF48B682C78D0B000868B30 /* Preview Assets.xcassets */; };
 		9CF48B732C78D0B000868B30 /* MGC_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B722C78D0B000868B30 /* MGC_TrackerTests.swift */; };
 		9CF48B7D2C78D0B000868B30 /* MGC_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B7C2C78D0B000868B30 /* MGC_TrackerUITests.swift */; };
 		9CF48B7F2C78D0B000868B30 /* MGC_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B7E2C78D0B000868B30 /* MGC_TrackerUITestsLaunchTests.swift */; };
+		9CF48B932C78D26700868B30 /* GolfModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B922C78D26700868B30 /* GolfModels.swift */; };
+		9CF48B962C78D29600868B30 /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B952C78D29600868B30 /* TrackerViewModel.swift */; };
+		9CF48B992C78D2C400868B30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B982C78D2C400868B30 /* ContentView.swift */; };
+		9CF48B9B2C78D2CD00868B30 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B9A2C78D2CD00868B30 /* RoundView.swift */; };
+		9CF48B9D2C78D2D700868B30 /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B9C2C78D2D700868B30 /* HoleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +39,17 @@
 /* Begin PBXFileReference section */
 		9CF48B5E2C78D0AF00868B30 /* MGC_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGC_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF48B612C78D0AF00868B30 /* MGC_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGC_TrackerApp.swift; sourceTree = "<group>"; };
-		9CF48B632C78D0AF00868B30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CF48B652C78D0B000868B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CF48B682C78D0B000868B30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CF48B6E2C78D0B000868B30 /* MGC_TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGC_TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF48B722C78D0B000868B30 /* MGC_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGC_TrackerTests.swift; sourceTree = "<group>"; };
 		9CF48B782C78D0B000868B30 /* MGC_TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGC_TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF48B7C2C78D0B000868B30 /* MGC_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGC_TrackerUITests.swift; sourceTree = "<group>"; };
 		9CF48B7E2C78D0B000868B30 /* MGC_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGC_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CF48B922C78D26700868B30 /* GolfModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfModels.swift; sourceTree = "<group>"; };
+		9CF48B952C78D29600868B30 /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
+		9CF48B982C78D2C400868B30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CF48B9A2C78D2CD00868B30 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		9CF48B9C2C78D2D700868B30 /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +100,13 @@
 		9CF48B602C78D0AF00868B30 /* MGC_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				9CF48B9E2C78D47600868B30 /* Preview Content */,
+				9CF48B942C78D27800868B30 /* ViewModels */,
+				9CF48B912C78D24E00868B30 /* Models */,
 				9CF48B612C78D0AF00868B30 /* MGC_TrackerApp.swift */,
-				9CF48B632C78D0AF00868B30 /* ContentView.swift */,
 				9CF48B652C78D0B000868B30 /* Assets.xcassets */,
-				9CF48B672C78D0B000868B30 /* Preview Content */,
 			);
 			path = MGC_Tracker;
-			sourceTree = "<group>";
-		};
-		9CF48B672C78D0B000868B30 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				9CF48B682C78D0B000868B30 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		9CF48B712C78D0B000868B30 /* MGC_TrackerTests */ = {
@@ -125,6 +124,40 @@
 				9CF48B7E2C78D0B000868B30 /* MGC_TrackerUITestsLaunchTests.swift */,
 			);
 			path = MGC_TrackerUITests;
+			sourceTree = "<group>";
+		};
+		9CF48B912C78D24E00868B30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CF48B922C78D26700868B30 /* GolfModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CF48B942C78D27800868B30 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CF48B972C78D2A900868B30 /* Views */,
+				9CF48B952C78D29600868B30 /* TrackerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CF48B972C78D2A900868B30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF48B982C78D2C400868B30 /* ContentView.swift */,
+				9CF48B9A2C78D2CD00868B30 /* RoundView.swift */,
+				9CF48B9C2C78D2D700868B30 /* HoleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CF48B9E2C78D47600868B30 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF48B692C78D0B000868B30 /* Preview Assets.xcassets in Resources */,
 				9CF48B662C78D0B000868B30 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF48B642C78D0AF00868B30 /* ContentView.swift in Sources */,
+				9CF48B932C78D26700868B30 /* GolfModels.swift in Sources */,
+				9CF48B9D2C78D2D700868B30 /* HoleView.swift in Sources */,
+				9CF48B9B2C78D2CD00868B30 /* RoundView.swift in Sources */,
+				9CF48B992C78D2C400868B30 /* ContentView.swift in Sources */,
+				9CF48B962C78D29600868B30 /* TrackerViewModel.swift in Sources */,
 				9CF48B622C78D0AF00868B30 /* MGC_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MGC_Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = RM4F2QWA36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MGC_Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = RM4F2QWA36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
